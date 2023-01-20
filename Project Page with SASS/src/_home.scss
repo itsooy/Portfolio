@@ -1,0 +1,20 @@
+.home{
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 40vh;
+    @include background;
+    &__name{
+        font-size: 5rem;
+        padding-top: 1rem;
+        margin-bottom:1rem ;
+        border-bottom: 2px solid white;
+        &--last{
+            color: #bd3b0b;
+            font-weight: 700;
+        }
+        span{
+
+        }
+    }
+}

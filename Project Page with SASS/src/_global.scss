@@ -1,0 +1,26 @@
+$primary-color: #272727;
+$secondary-color: #ff652f;
+
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+@function set-text-color($color){
+    @if(lightness($color)>40%){
+        @return #000;
+    }@else{
+        @return #fff;
+    }
+}
+
+@mixin transition-ease{
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin background{
+    background:linear-gradient(to right, rgba($primary-color,0.9),rgba($primary-color, 0.3)), url(../img/model-1.jpg) center top;
+    background-size: cover;
+}

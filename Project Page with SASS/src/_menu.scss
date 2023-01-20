@@ -1,0 +1,29 @@
+.nav{
+    //ul
+    .menu-nav{
+        text-align: right;
+        //li
+        &__item{
+            display: inline;
+            padding-right: 1rem;
+            &.active> a{
+                color: $secondary-color;
+            }
+        }
+
+        //a
+
+        &__link{
+            font-size: 1rem;
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: 300;
+            @include transition-ease;
+            &:hover{
+                color: #e505e5;
+            }
+        }
+    }
+
+
+}
