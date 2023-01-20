@@ -2,9 +2,9 @@
 This project is a web application built using CSS, HTML, and Sass. The goal of the project is to create a visually appealing and user-friendly interface for users to interact with.
 
 # Technologies Used
-CSS
-HTML
-Sass
+- CSS
+- HTML
+- Sass
 
 # Setting up and Running the Project
 - Clone the repository to your local machine
