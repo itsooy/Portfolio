@@ -1,0 +1,21 @@
+@include media-md{
+    .nav{
+        .menu-nav{
+            &__item{
+                padding: 1.5rem;
+            }
+
+            &__link{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@include media-lg{
+
+}
+
+@include media-xl{
+
+}
