@@ -9,6 +9,8 @@
     <!-- Bootstrap Icons CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css' rel='stylesheet' />
+
     <link rel="stylesheet" href="./css/style.css">
     <title>Claursway Bootcamp</title>
 </head>
@@ -125,21 +127,66 @@
     </section>
 
     <!-- support -->
-    <section></section>
+    <section  id="support-section" class="p-5">
+        <div class="container" >
+            <div class="row text-center g-4">
+            </div>
+        </div>
+    </section>
 
     <!-- FAQ -->
-    <section id="faq-section"></section>
+    <section id="faq-section" class="p-5"></section>
 
     <!--Instructors  -->
-    <section id="instructors-section"></section>
+    <section id="instructors-section" class="bg-main p-5"></section>
 
     <!-- contact us -->
-    <section id="contact-section"></section>
+    <section id="contact-section" class="p-5">
+
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center"> Contact Us</h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold"> Main Location:</span>
+                            125 Main St., New York 1110.
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Phone:</span> 000-000-000
+                        </li>
+                        <li class="list-group-item">
+                           <span class="fw-bold"> Student Phone:</span> 000-000-000
+                        </li>
+                        <li class="list-group-item">
+                           <span class="fw-bold"> Enrollment Email:</span>  enrol@clarusway.com
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- footer -->
-    <footer></footer>
+    <footer class="p-5 bg-dark text-white text-center">
+        <div class="container">
+            <p class="lead"> Copyright &copy; 2023 Claursway Bootcamp</p>
+        </div>
+    </footer>
 
+
+    <a href="#" class="position-fixed bottom-0 end-0 p-5" id="arrow-up"> 
+        <i class="bi bi-arrow-up-square-fill h1 text-success"></i>
+    </a>
     <!-- Bootstrap JS  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js'></script>
+    <script src="./JS/data.js"></script>
+    <script src="./JS/main.js"></script>
 </body>
 </html>
