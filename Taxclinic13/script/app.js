@@ -29,12 +29,10 @@ document.getElementById("check-button").addEventListener("click", function () {
   });
 
   const questions = [
-    "Do live live in Canada before than Jan 1, 2023",
+    "Do you live in Canada before than Jan 1, 2023",
     "I didn't face bankruptcy in 2022",
     "I will do only current year tax return.",
     "Do your family family income lower than the limit?",
-    "Question 5",
-    "Question 6",
   ];
   
   let currentQuestion = 0;
