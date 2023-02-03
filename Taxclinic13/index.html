@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./style/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand bg-body-tertiary">
+      <nav class="justify-content-end">
+        <a class="navbar-brand" href="">Home</a>
+        <a class="navbar-brand" href="">Eligibility Check</a>
+        <a class="navbar-brand" href="">Contact Us</a>
+      </nav>
+    </nav>
+
+    <!-- Eligiblity Cards -->
+    <div class="card text-center" id="question-container">
+      <div class="card-header">Am I Eligible?</div>
+      <div class="card-body" id="card-body">
+        <h3 class="card-title" id="card-text">Special title treatment</h3>
+        <p class="card-text" id="card-warning"></p>
+        <div class="d-flex justify-content-center m-3 gap-3">
+          <button class="btn btn-success shadow btn-lg" id="yes-btn">
+            Yes
+          </button>
+          <button class="btn btn-danger shadow btn-lg" id="no-btn">No</button>
+        </div>
+      </div>
+      <button
+        class="btn btn-primary"
+        id="family-income"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling"
+      >
+        Family Income Chart
+      </button>
+
+      <div
+        class="offcanvas offcanvas-start"
+        data-bs-scroll="true"
+        data-bs-backdrop="false"
+        tabindex="-1"
+        id="offcanvasScrolling"
+        aria-labelledby="offcanvasScrollingLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+            Family Size x Income Chart
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Family Size</th>
+                <th scope="col">Total Family Income</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1 Person</th>
+                <td>$35,000</td>
+              
+              </tr>
+              <tr>
+                <th scope="row">2 Person</th>
+                <td>$45,000</td>
+
+              </tr>
+              <tr>
+                <th scope="row">3 Person</th>
+                <td>$47,500</td>
+
+              </tr>
+              <tr>
+                <th scope="row">4 Person</th>
+                <td>$50,000</td>
+
+              </tr>
+              <tr>
+                <th scope="row">5 Person</th>
+                <td>$52,500</td>
+
+              </tr>
+            </tbody>
+          </table>
+
+          <p>*For each additional person add $2,500</p>
+        </div>
+      </div>
+      <div class="card-footer text-muted">Free Income Tax Clinic</div>
+
+      <!-- Eligibility Pop-up -->
+    </div>
+    <div class="modal" tabindex="-1" id="alert-eligible">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Tax Clinic</h5>
+          </div>
+          <div class="modal-body">
+            <p id="text-1">You are eligible for using Tax Clinic Service</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              id="cls-button"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Postal Code Check -->
+    <div style="display: none" class="form-container" id="main-container">
+      <h2>Check Your Postal Code</h2>
+      <h6>Please enter the postal code with K1K3A7 format</h6>
+      <div class="justify-content-between" id="input-area">
+        <input
+          type="text"
+          class="form-input"
+          id="postal-code"
+          placeholder="Enter your postal code"
+        />
+        <button class="btn btn-primary btn-lg" id="check-button">Check</button>
+        <button class="btn btn-primary btn-lg" id="reset-button">Clear</button>
+      </div>
+
+      <div
+        style="display: none"
+        id="alert-catch-false"
+        class="alert alert-warning m-3"
+        role="alert"
+      >
+        <strong>Postal code not found in the our service area </strong>
+      </div>
+      <div
+        style="display: none; text-align: center"
+        id="alert-catch-true"
+        class="alert alert-success m-3"
+        role="alert"
+      >
+        <strong>Postal in the our service area </strong>
+      </div>
+      <div
+        style="display: none; text-align: center"
+        id="alert-catch-empty"
+        class="alert alert-warning m-3"
+        role="alert"
+      >
+        <strong>Please enter your postal code </strong>
+      </div>
+
+      <!-- Booking Button -->
+      <button
+        style="display: none"
+        class="btn btn-success shadow btn-lg justify-content-center"
+        id="apt-button"
+        onclick="window.location.href='https://rrcrc.taxclinic.org';"
+      >
+        Click to Book an Appointment
+      </button>
+
+      <!-- RRCRC Card -->
+
+      
+    </div>
+
+    <script src="./script/data.js"></script>
+    <script src="./script/app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

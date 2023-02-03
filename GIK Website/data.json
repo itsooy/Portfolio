@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "ABC Organization",
+      "creditLimit": 1500,
+      "credit": 1500
+    },
+    {
+      "id": 2,
+      "name": "XYZ Association",
+      "creditLimit": 2000,
+      "credit": 2000
+    },
+    {
+      "id": 3,
+      "name": "PQR Group",
+      "creditLimit": 1000,
+      "credit": 1000
+    }
+  ]
+  

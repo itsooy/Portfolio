@@ -1,0 +1,70 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+  }
+
+  .form-input {
+    padding: 10px;
+    margin: 20px 0;
+    width: 250px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+
+  .form-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: lightblue;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .apt-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: lightblue;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .question-card {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  #main-container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #question-container{
+    margin: 300px 100px;
+  }
+
+  #family-income{
+    display: none;
+  }
